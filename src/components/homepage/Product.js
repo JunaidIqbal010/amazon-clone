@@ -13,6 +13,7 @@ function Product({description, price, image_url, id}) {
         price: price,
         description: description,
         image_url: image_url,
+        quantity: 1,
       }
     })
   }
@@ -28,7 +29,6 @@ function Product({description, price, image_url, id}) {
           <p className="product__ratingStar"><StarIcon /></p>
         </div>
       </div>
-
       <img src={image_url} alt=""></img>
       <button onClick={addToCart}>Add to Cart</button>
     </div>
